@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Andrew Heroux — Resume</title>
+  <meta name="description" content="Andrew Heroux — Resume with filters" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="card">
+      <header class="site-header">
+        <div class="brand">
+          <div class="photo" aria-label="Profile photo">
+            <img src="assets/profile.jpeg" alt="Andrew Heroux"
+                 onerror="this.remove(); this.parentElement.innerHTML = '<div class=&quot;placeholder&quot;>Photo goes here<br>(assets/profile.jpg)</div>';">
+          </div>
+          <div class="brand-text">
+            <h1>Andrew Heroux</h1>
+            <div class="sub">
+              <span class="mono">(320) 492-9621</span>
+              <span class="mono">herouxandrew@gmail.com</span>
+              <a class="pill" href="mailto:herouxandrew@gmail.com">Email</a>
+              <a class="pill" id="linkedinLink" href="#">LinkedIn</a>
+              <a class="pill" id="githubLink" href="#">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <a class="nav-link" href="index.html">Intro</a>
+          <a class="nav-link is-active" href="resume.html">Resume</a>
+          <a class="nav-link" id="interviewAgentLink" href="#" target="_blank" rel="noopener"> Portfolio GPT</a>
+        </nav>
+      </header>
+
+      <main class="content">
+        <section class="section">
+          <div class="section-top">
+            <h2>Resume</h2>
+            
+          </div>
+
+          <div class="contact-row">
+            <div class="contact-left">
+              <div class="contact-name">Andrew Heroux</div>
+              <div class="mono">BA Computer Science — Saint John’s University (2021)</div>
+            </div>
+            <div class="contact-right mono">
+              (320) 492-9621<br>
+              herouxandrew@gmail.com
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Professional Summary</h2>
+          <p class="summary">
+Software Engineer with 5+ years of overall experience building and supporting internal business applications, including 3+ years of custom C# development, Salesforce, and SharePoint. Work primarily on back-end systems, using REST APIs to build and maintain integrations between platforms, with intermediate-level experience across full-stack development, including database design, MVC application development, and UI implementation. Over the past year, I have independently completed several large, business-critical projects, ranging from service rewrites and platform migrations to full application builds and large-scale data archival. I am experienced in the responsible use of AI tools to improve product quality and reduce the time and effort to complete my work. I have a personal interest in scientific and technical software development and enjoy learning and exploring these areas outside my professional work.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>Filters</h2>
+
+          <div class="filter-wrap" role="region" aria-label="Resume filters">
+            <p id="filterHint">Tip: click a topic to filter the resume.</p>
+
+            <div id="filterBar" aria-label="Filter topics">
+              <button class="filter-btn is-on" data-filter="csharp" type="button">csharp</button>
+              <button class="filter-btn is-on" data-filter="dotnet" type="button">dotnet</button>
+              <button class="filter-btn is-on" data-filter="mvc" type="button">mvc</button>
+              <button class="filter-btn is-on" data-filter="efcore" type="button">efcore</button>
+              <button class="filter-btn is-on" data-filter="sql" type="button">sql</button>
+              <button class="filter-btn is-on" data-filter="rest-api" type="button">rest-api</button>
+              <button class="filter-btn is-on" data-filter="salesforce" type="button">salesforce</button>
+              <button class="filter-btn is-on" data-filter="sharepoint" type="button">sharepoint</button>
+              <button class="filter-btn is-on" data-filter="powershell" type="button">powershell</button>
+              <button class="filter-btn is-on" data-filter="integration" type="button">integration</button>
+              <button class="filter-btn is-on" data-filter="performance" type="button">performance</button>
+              <button class="filter-btn is-on" data-filter="migration" type="button">migration</button>
+              <button class="filter-btn is-on" data-filter="automation" type="button">automation</button>
+              <button class="filter-btn is-on" data-filter="leadership" type="button">leadership</button>
+              <button class="filter-btn is-on" data-filter="agile" type="button">agile</button>
+              <button class="filter-btn is-on" data-filter="teaching" type="button">teaching</button>
+              <button class="filter-btn is-on" data-filter="research" type="button">research</button>
+              <button class="filter-btn is-on" data-filter="validation" type="button">validation</button>
+              <button class="filter-btn is-on" data-filter="operations" type="button">operations</button>
+              <button class="filter-btn is-on" data-filter="requirements" type="button">requirements</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Experience</h2>
+
+          <!-- =========================
+               Wenger Corporation
+               ========================= -->
+          <div class="job" data-job>
+            <div class="job-top">
+              <div class="role">Software Engineer, Wenger Corporation</div>
+              <div class="meta">May 2022 - Present</div>
+            </div>
+
+            <!-- Project 1 -->
+            <div class="project" data-project>
+              <div class="project-title">Support/enhance six applications/platforms for the company, maintaining integrations through REST APIs</div>
+              <div class="lines">
+                <div class="line" data-tags="salesforce csharp dotnet sharepoint integration rest-api">
+                  Salesforce, Order Acquisition (C#), OppExchange (C#), SharePoint, ISO Docs (C#), FreightRating (C#)
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project" data-project>
+              <div class="project-title">Support integration between Salesforce and Epicor (ERP)</div>
+              <div class="lines">
+                <div class="line" data-tags="integration rest-api salesforce">
+                  Maintained and supported integration flows between systems
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project" data-project>
+              <div class="project-title">Lead development for new OppExchange application (C# MVC)</div>
+              <div class="lines">
+                <div class="line" data-tags="csharp dotnet mvc">
+                  Designed and built OppExchange, a complete replacement for a legacy Order Acquisition system
+                </div>
+                <div class="line" data-tags="automation leadership">
+                  Architected a table-driven, user-maintainable platform with a full maintenance suite, enabling product managers to update and create screens without developer involvement
+                </div>
+                <div class="line" data-tags="sql efcore csharp mvc">
+                  Owned the entire application stack, database design, EF-Core data models, MVC controllers, and UI
+                </div>
+                <div class="line" data-tags="performance">
+                  Improved performance over the legacy system using caching and asynchronous server calls
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project" data-project>
+              <div class="project-title">Lead development in file storage and sharing project utilizing Salesforce and SharePoint</div>
+              <div class="lines">
+                <div class="line" data-tags="salesforce sharepoint integration rest-api">
+                  Built API integration to set up file storage in SharePoint based on Salesforce projects
+                </div>
+                <div class="line" data-tags="sharepoint rest-api csharp">
+                  Set up SharePoint to be searchable using APIs, indexing, filtered views, and C#
+                </div>
+                <div class="line" data-tags="sharepoint salesforce integration rest-api">
+                  Built an issues management solution in SharePoint that is integrated with Salesforce through API
+                </div>
+                <div class="line" data-tags="powershell automation sharepoint rest-api">
+                  Built a ‘toolbelt’ of PowerShell scripts to maintain SharePoint through API
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project" data-project>
+              <div class="project-title">Lead SharePoint archival for 1.3 million files, ensuring searchability of the archive on a network drive</div>
+              <div class="lines">
+                <div class="line" data-tags="sharepoint powershell automation">
+                  Used SharePoint API and PowerShell to download and automatically categorize files
+                </div>
+                <div class="line" data-tags="automation validation">
+                  Built an extensive logging and a separate validation script to ensure all files were archived
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="project" data-project>
+              <div class="project-title">Developed and support Customer Service center in Salesforce</div>
+              <div class="lines">
+                <div class="line" data-tags="salesforce integration">
+                  Created a solution that integrates communication channels into Salesforce for case management
+                </div>
+                <div class="line" data-tags="salesforce automation">
+                  Set up custom case routing logic to ensure cases are prioritized automatically
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 7 -->
+            <div class="project" data-project>
+              <div class="project-title">Supported update from Salesforce Classic to Salesforce Lightning</div>
+              <div class="lines">
+                <div class="line" data-tags="salesforce migration">
+                  Reimplemented existing customizations to run in the updated Salesforce Lightning environment
+                </div>
+                <div class="line" data-tags="salesforce migration">
+                  Worked with business QA testers to ensure functionality
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- =========================
+               Federated Insurance
+               ========================= -->
+          <div class="job" data-job>
+            <div class="job-top">
+              <div class="role">IS Systems Developer, Federated Insurance</div>
+              <div class="meta">June 2021 - May 2022</div>
+            </div>
+
+            <div class="project" data-project>
+              <div class="project-title">Supported PolicyCenter application</div>
+              <div class="lines">
+                <div class="line" data-tags="operations">
+                  Supported operations to ensure uptime and customer satisfaction
+                </div>
+                <div class="line" data-tags="agile requirements">
+                  Communicated with project analysts to understand and verify requirements for continuous development
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- =========================
+               Saint John’s University (Lead TA)
+               ========================= -->
+          <div class="job" data-job>
+            <div class="job-top">
+              <div class="role">Computer Science Lead Teaching Assistant (TA), Saint John’s University</div>
+              <div class="meta">August 2018 - May 2021</div>
+            </div>
+
+            <div class="project" data-project>
+              <div class="project-title">Teaching / support</div>
+              <div class="lines">
+                <div class="line" data-tags="leadership teaching">
+                  Managed TA staff and schedules
+                </div>
+                <div class="line" data-tags="teaching">
+                  Graded assignments and coached students on concepts to enhance learning
+                </div>
+                <div class="line" data-tags="teaching leadership">
+                  Designed a first-of-its-kind tutoring plan for online labs to accommodate COVID restrictions
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- =========================
+               Securian Financial (Intern)
+               ========================= -->
+          <div class="job" data-job>
+            <div class="job-top">
+              <div class="role">Applications Development Intern, Securian Financial</div>
+              <div class="meta">May 2020 - August 2020</div>
+            </div>
+
+            <div class="project" data-project>
+              <div class="project-title">Development work</div>
+              <div class="lines">
+                <div class="line" data-tags="agile">
+                  Participated in SCRUM ceremonies and learned agile software development with SCRUM masters
+                </div>
+                <div class="line" data-tags="automation">
+                  Reviewed existing code to help automate customer profile changes
+                </div>
+                <div class="line" data-tags="automation">
+                  Coded new feature, performed unit/integration tests, and deployed code to QA test environment
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- =========================
+               Saint John’s University (Research)
+               ========================= -->
+          <div class="job" data-job>
+            <div class="job-top">
+              <div class="role">Research Fellow – Computer Generated Music, Saint John’s University</div>
+              <div class="meta">May 2019 - August 2019</div>
+            </div>
+
+            <div class="project" data-project>
+              <div class="project-title">Research</div>
+              <div class="lines">
+                <div class="line" data-tags="research">
+                  Developed working examples of my research
+                </div>
+                <div class="line" data-tags="research">
+                  Analyzed data produced from the music software and made changes as necessary
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Extra spacing requested -->
+            <div style="height: 20px;"></div>
+
+            <!-- PDF download at bottom of the page area (still within card) -->
+            <div class="panel" style="margin-top: 6px;">
+              <div class="panel-title mono">Resume PDF</div>
+              <div class="mono" style="margin-top: 6px;">
+                <a class="pill" href="assets/Resume.pdf" download>Download PDF</a>
+              </div>
+            </div>
+          </div>
+
+        </section>
+      </main>
+    </div>
+  </div>
+
+
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

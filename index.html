@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Andrew Heroux</title>
+  <meta name="description" content="Andrew Heroux — Software Engineer" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <header class="site-header">
+        <div class="brand">
+          <div class="photo" aria-label="Profile photo">
+            <img src="assets/profile.jpeg" alt="Andrew Heroux"
+                 onerror="this.remove(); this.parentElement.innerHTML = '<div class=&quot;placeholder&quot;>Photo goes here<br>(assets/profile.jpg)</div>';">
+          </div>
+          <div class="brand-text">
+            <h1>Andrew Heroux</h1>
+            <div class="sub">
+              <span class="mono">(320) 492-9621</span>
+              <span class="mono">herouxandrew@gmail.com</span>
+              <a class="pill" href="mailto:herouxandrew@gmail.com">Email</a>
+              <a class="pill" id="linkedinLink" href="#">LinkedIn</a>
+              <a class="pill" id="githubLink" href="#">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <a class="nav-link is-active" href="index.html">Intro</a>
+          <a class="nav-link" href="resume.html">Resume</a>
+          <a class="nav-link" id="interviewAgentLink" href="#" target="_blank" rel="noopener"> Portfolio GPT</a>
+        </nav>
+      </header>
+
+      <main class="content">
+        <section class="hero">
+          <div class="hero-left">
+            <h2 class="hero-title">Hello</h2>
+            <p class="hero-text">
+              I’m a software engineer who designs and builds practical business applications with clean architecture and long-term maintainability in mind.
+            </p>
+
+          <!-- Add more space between CTA area and contact panel by pushing panel down slightly -->
+          <div class="hero-right" style="margin-top: 22px;">
+            <div class="panel">
+              <div class="panel-title mono">Contact</div>
+              <div class="mono">
+                (320) 492-9621<br>
+                <a href="mailto:herouxandrew@gmail.com">herouxandrew@gmail.com</a>
+              </div>
+
+              <div class="panel-title mono" style="margin-top:14px;">Education</div>
+              <div class="mono">
+                BA Computer Science (2021)<br>
+                Saint John’s University
+              </div>
+            </div>
+          </div>
+          <!-- Extra spacing requested -->
+            <div style="height: 20px;"></div>
+
+            <!-- PDF download at bottom of the page area (still within card) -->
+            <div class="panel" style="margin-top: 6px;">
+              <div class="panel-title mono">Resume PDF</div>
+              <div class="mono" style="margin-top: 6px;">
+                <a class="pill" href="assets/Resume.pdf" download>Download PDF</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="footer mono">
+      © <span id="year"></span> Andrew Heroux
+    </footer>
+  </div>
+
+  <script src="assets/app.js"></script>
+  <script>
+    (function () {
+      var el = document.getElementById("year");
+      if (el) el.textContent = String(new Date().getFullYear());
+    })();
+  </script>
+</body>
+</html>

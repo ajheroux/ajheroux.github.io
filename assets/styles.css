@@ -1,0 +1,316 @@
+:root{
+  --bg: #f6f8fc;
+  --text: #0f172a;
+  --muted:#475569;
+  --border: rgba(15,23,42,.12);
+  --shadow: 0 12px 30px rgba(15,23,42,.10);
+  --radius: 16px;
+  --radius2: 12px;
+  --maxw: 980px;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --sans: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  --accent: #2563eb;
+  --accent2:#16a34a;
+}
+
+*{ box-sizing:border-box; }
+
+body{
+  margin:0;
+  font-family: var(--sans);
+  background:
+    radial-gradient(900px 600px at 15% 10%, rgba(37,99,235,.18), transparent 60%),
+    radial-gradient(800px 550px at 85% 15%, rgba(22,163,74,.12), transparent 60%),
+    radial-gradient(900px 650px at 50% 100%, rgba(15,23,42,.10), transparent 60%),
+    var(--bg);
+  color: var(--text);
+  line-height: 1.35;
+}
+
+.wrap{ max-width: var(--maxw); margin: 20px auto; padding: 0 16px 40px; }
+
+.card{
+  background: linear-gradient(180deg, rgba(255,255,255,.90), rgba(255,255,255,.82));
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow:hidden;
+}
+
+a{ color: var(--accent); text-decoration:none; }
+a:hover{ text-decoration: underline; }
+
+.mono{ font-family: var(--mono); color: var(--muted); }
+.footer{ margin-top: 12px; text-align:center; opacity:.9; }
+
+.site-header{
+  padding: 16px 16px 12px;
+  display:flex;
+  gap: 14px;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--border);
+  background: rgba(255,255,255,.70);
+}
+
+.brand{ display:flex; gap: 12px; align-items:center; min-width: 0; }
+.brand-text{ min-width: 0; }
+h1{ margin:0 0 3px; font-size: 21px; letter-spacing:.2px; }
+
+.sub{
+  display:flex;
+  flex-wrap:wrap;
+  gap: 8px 10px;
+  align-items:center;
+  font-size: 13px;
+}
+.sub span{ white-space:nowrap; }
+
+.photo{
+  width: 70px;
+  height: 70px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: rgba(15,23,42,.04);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  flex: 0 0 auto;
+}
+.photo img{ width:100%; height:100%; object-fit: cover; display:block; }
+.photo .placeholder{
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--muted);
+  padding: 10px;
+  text-align:center;
+}
+
+.nav{ display:flex; gap: 10px; padding-top: 4px; }
+.nav-link{
+  font-family: var(--mono);
+  font-size: 13px;
+  padding: 7px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,.60);
+  color: var(--text);
+}
+.nav-link.is-active{
+  border-color: rgba(22,163,74,.45);
+  background: rgba(22,163,74,.10);
+}
+
+.content{ padding: 16px; }
+
+.pill{
+  display:inline-flex;
+  gap: 8px;
+  align-items:center;
+  padding: 6px 9px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255,255,255,.70);
+  color: var(--text);
+  font-size: 13px;
+}
+.pill:hover{ text-decoration:none; border-color: rgba(37,99,235,.35); }
+
+.section{
+  padding: 10px 0;
+  border-top: 1px solid var(--border);
+}
+.section:first-of-type{ border-top: 0; padding-top: 4px; }
+
+.section h2{
+  margin:0 0 8px;
+  font-size: 15px;
+  letter-spacing:.25px;
+}
+.section-top{
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  gap:12px;
+  margin-bottom: 4px;
+}
+
+.summary{
+  margin:0;
+  color:#111827;
+  white-space: pre-wrap;
+  font-size: 13.5px;
+  line-height: 1.42;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding: 9px 11px;
+  border-radius: 12px;
+  border: 1px solid rgba(37,99,235,.35);
+  background: rgba(37,99,235,.08);
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 13px;
+}
+.btn:hover{ text-decoration:none; border-color: rgba(37,99,235,.55); }
+
+.btn-ghost{
+  border-color: var(--border);
+  background: rgba(255,255,255,.60);
+}
+.btn-ghost:hover{ border-color: rgba(37,99,235,.35); }
+
+/* Contact row */
+.contact-row{
+  display:flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 4px;
+}
+.contact-name{
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 1px;
+}
+.contact-right{
+  text-align: right;
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+/* Filter UI */
+.filter-wrap{
+  border-radius: var(--radius2);
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,.70);
+  padding: 10px;
+}
+#filterHint{
+  margin: 0 0 8px;
+  font-size: 12.5px;
+  font-family: var(--mono);
+  color: var(--muted);
+}
+#filterBar{
+  display:flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items:center;
+}
+.filter-btn{
+  font-family: var(--mono);
+  font-size: 12.25px;
+  padding: 7px 9px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,.60);
+  color: var(--text);
+  cursor:pointer;
+  user-select:none;
+}
+.filter-btn:hover{ border-color: rgba(37,99,235,.35); }
+.filter-btn.is-on{
+  border-color: rgba(22,163,74,.45);
+  background: rgba(22,163,74,.10);
+}
+.filter-btn.is-off{ opacity: .55; }
+
+/* =========================
+   Experience Hierarchy
+   ========================= */
+
+.job{
+  margin: 10px 0 16px;
+}
+.job.is-hidden{ display:none; }
+
+/* Position header more distinct */
+.job-top{
+  display:flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: baseline;
+  margin: 0 0 10px;         /* space before first project */
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(15,23,42,.10);
+}
+
+.role{
+  font-weight: 750;
+  font-size: 15px;
+  letter-spacing: .1px;
+}
+
+.meta{
+  font-family: var(--mono);
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+/* Project titles */
+.project{
+  margin: 10px 0 12px;
+}
+.project.is-hidden{ display:none; }
+
+.project-title{
+  font-size: 13.75px;
+  font-weight: 650;
+  margin: 0 0 2px;
+}
+
+/* Lines: tight stacking, dash + text aligned, and FIX for HTML indentation whitespace */
+.lines{
+  margin: 0;
+}
+
+/*
+  IMPORTANT FIX:
+  white-space must be NORMAL so the HTML indentation/newlines inside <div class="line">...</div>
+  do not get preserved. This is why you were seeing dash on one line and text shifted right.
+*/
+.line{
+  display: grid;
+  grid-template-columns: 10px 1fr; /* dash + text column */
+  column-gap: 6px;
+  align-items: start;
+
+  font-size: 13.25px;
+  line-height: 1.12;
+  margin: 0;
+  padding: 0;
+
+  white-space: normal;      /* <-- critical fix */
+  overflow-wrap: anywhere;  /* safe wrapping */
+}
+
+.line::before{
+  content: "–";
+  color: var(--muted);
+  justify-self: start;
+}
+
+/* Hide true empty lines */
+.line:empty{ display:none; }
+
+/* Filtering */
+.line.is-hidden{ display:none; }
+
+/* subtle highlight without shifting layout */
+.line.is-match{
+  background: rgba(37,99,235,.05);
+  border-radius: 6px;
+  padding: 1px 4px;
+}
+
+/* Responsive */
+@media (max-width: 820px){
+  .site-header{ align-items: flex-start; }
+  .contact-row{ flex-direction: column; }
+  .contact-right{ text-align: left; }
+  .job-top{ gap: 8px; }
+}
